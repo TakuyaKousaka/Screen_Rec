@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2016. Vijai Chandra Prasad R.
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see http://www.gnu.org/licenses
+  -->
+
+<resources>
+    <string-array name="fpsArray" translatable="false">
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>50 </item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="resolutionsArray" translatable="false">
+        <item>720P (HD)</item>
+        <item>1080P (FHD)</item>
+        <item>1440P (QHD)</item>
+    </string-array>
+
+    <string-array name="resolutionValues" translatable="false">
+        <item>720</item>
+        <item>1080</item>
+        <item>1440</item>
+    </string-array>
+
+    <string-array name="orientationEntries" translatable="false">
+        <item>Auto</item>
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+
+    <string-array name="orientationValues" translatable="false">
+        <item>auto</item>
+        <item>portrait</item>
+        <item>landscape</item>
+    </string-array>
+
+    <string-array name="resolutionsArray_18_9" translatable="false">
+        <item>360x720</item>
+        <item>720x1440</item>
+        <item>1080x2160</item>
+        <item>1440x2880</item>
+    </string-array>
+
+    <string-array name="resolutionValues_18_9" translatable="false">
+        <item>360x720</item>
+        <item>720x1440</item>
+        <item>1080x2160</item>
+        <item>1440x2880</item>
+    </string-array>
+
+    <string-array name="bitrateArray" translatable="false">
+        <item>1.0 Mbit (Again, why?)</item>
+        <item>2.5 Mbit (Why?)</item>
+        <item>3.5Mbit (Unwatchable)</item>
+        <item>4.5 Mbit (Nearly watchable)</item>
+        <item>6.8 Mbit (Decent)</item>
+        <item>9.8 Mbit (Shitty Youtube tier)</item>
+        <item>12 Mbit (Perfect)</item>
+        <item>24 Mbit (Nearly RIP)</item>
+        <item>48 Mbit (RIP CPU)</item>
+    </string-array>
+
+    <string-array name="bitratesValue" translatable="false">
+        <item>1048576</item>
+        <item>2621440</item>
+        <item>3670016</item>
+        <item>4718592</item>
+        <item>7130317</item>
+        <item>10276045</item>
+        <item>12582912</item>
+        <item>25165824</item>
+        <item>50331648</item>
+    </string-array>
+
+    <string-array name="filename" translatable="false">
+        <item>yyyyMMdd_hhmmss</item>
+        <item>ddMMyyyy_hhmmss</item>
+        <item>yyMMdd_hhmmss</item>
+        <item>ddMMyy_hhmmss</item>
+        <item>hhMMss_yyyymmdd</item>
+        <item>hhMMss_ddmmyyyy</item>
+        <item>hhMMss_yymmdd</item>
+        <item>hhMMss_ddmmyy</item>
+    </string-array>
+
+    <string-array name="filename_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="themeArray">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Black</item>
+    </string-array>
+
+    <string-array name="themeValues">
+        <item>light_theme</item>
+        <item>dark_theme</item>
+        <item>black_theme</item>
+    </string-array>
+</resources>

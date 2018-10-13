@@ -1,0 +1,11 @@
+<!-- drawable/video.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="108dp"
+        android:height="108dp"
+        android:viewportWidth="53.246754"
+        android:viewportHeight="53.246754">
+    <group android:translateX="14.623377"
+            android:translateY="14.623377">
+        <path android:fillColor="#fff" android:pathData="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5Z" />
+    </group>
+</vector>

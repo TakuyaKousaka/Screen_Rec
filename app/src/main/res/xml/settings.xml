@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2016. Vijai Chandra Prasad R.
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see http://www.gnu.org/licenses
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/prefs_category_video_settings_title">
+
+        <ListPreference
+            android:defaultValue="1080"
+            android:entries="@array/resolutionsArray"
+            android:entryValues="@array/resolutionValues"
+            android:key="@string/res_key"
+            android:summary="@string/preference_resolution_summary"
+            android:title="@string/preference_resolution_title" />
+
+        <ListPreference
+            android:defaultValue="30"
+            android:entries="@array/fpsArray"
+            android:entryValues="@array/fpsArray"
+            android:key="@string/fps_key"
+            android:summary="@string/preference_fps_summary"
+            android:title="@string/preference_fps_title" />
+
+        <ListPreference
+            android:defaultValue="7130317"
+            android:entries="@array/bitrateArray"
+            android:entryValues="@array/bitratesValue"
+            android:key="@string/bitrate_key"
+            android:summary="@string/preference_bit_summary"
+            android:title="@string/preference_bit_title" />
+
+        <ListPreference
+            android:defaultValue="auto"
+            android:entries="@array/orientationEntries"
+            android:entryValues="@array/orientationValues"
+            android:key="@string/orientation_key"
+            android:summary="@string/preference_orientation_summary"
+            android:title="@string/preference_orientation_title" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_category_audio_settings_title">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/audiorec_key"
+            android:summary="@string/preference_audio_record_summary"
+            android:title="@string/preference_audio_record_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_category_save_options_title">
+        <com.takuya.screenrecorder.folderpicker.FolderChooser
+            android:key="@string/savelocation_key"
+            android:negativeButtonText="@android:string/cancel"
+            android:positiveButtonText="@android:string/ok"
+            android:title="@string/preference_save_location_title" />
+        <ListPreference
+            android:defaultValue="yyyyMMdd_hhmmss"
+            android:entries="@array/filename"
+            android:entryValues="@array/filename"
+            android:key="@string/filename_key"
+            android:title="@string/preference_filename_format_title" />
+        <EditTextPreference
+            android:defaultValue="recording"
+            android:key="@string/fileprefix_key"
+            android:summary="Enter a prefix for the saved file name"
+            android:title="@string/preference_filename_prefix_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/prefs_category_theme_title" >
+        <ListPreference
+            android:title="@string/preference_theme_title"
+            android:defaultValue="light_theme"
+            android:entries="@array/themeArray"
+            android:entryValues="@array/themeValues"
+            android:key="@string/preference_theme_key" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/prefs_category_recording_settings_title">
+        <CheckBoxPreference
+            android:title="@string/preference_enable_target_app_title"
+            android:summary="@string/preference_enable_target_app_summary"
+            android:key="@string/preference_enable_target_app_key"
+            android:defaultValue="false" />
+
+        <com.takuya.screenrecorder.preferences.AppPickerPreference
+            android:title="@string/preference_app_chooser_title"
+            android:summary="@string/preference_app_chooser_summary"
+            android:key="@string/preference_app_chooser_key"
+            android:defaultValue="none"
+            android:dependency="@string/preference_enable_target_app_key"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/prefs_category_experimental_title"
+        >
+        <CheckBoxPreference
+            android:title="@string/preference_save_gif_title"
+            android:summary="@string/preference_save_gif_summary"
+            android:key="@string/preference_save_gif_key"
+            android:defaultValue="false"
+            />
+        <Preference
+            android:title=""
+            android:summary=""
+            android:visibility="invisible"
+            android:selectable="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>
