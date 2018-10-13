@@ -6,7 +6,6 @@ import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -254,6 +253,7 @@ public class MainActivity extends AppCompatActivity {
         recorderService.putExtra(Const.RECORDER_INTENT_DATA, data);
         recorderService.putExtra(Const.RECORDER_INTENT_RESULT, resultCode);
         startService(recorderService);
+        //onBackPressed();
     }
 
 

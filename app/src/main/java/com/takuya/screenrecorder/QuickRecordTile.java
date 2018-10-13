@@ -24,11 +24,14 @@ public class QuickRecordTile extends TileService {
         isTileActive = !(tile.getState() == Tile.STATE_ACTIVE);
         changeTileState();
         if (isTileActive) {
-            startActivity(new Intent(this, MainActivity.class).setAction(getString(R.string.app_shortcut_action)));
+            Intent intent = new Intent(this, TileClickActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS|Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivityAndCollapse(intent.setAction(getString(R.string.app_shortcut_action)));
         } else {
             startService(new Intent(this, RecorderService.class).setAction(Const.SCREEN_RECORDING_STOP));
         }
         isTileActive = !isTileActive;
+        changeTileState();
     }
 
     private void changeTileState() {
